@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subiksha U | AI & Data Science Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warmBase: '#FBF3E4',
+                        accent: '#8C3B2E',
+                        tan1: '#F3E4C8',
+                        tan2: '#F6E9D6',
+                        tan3: '#EFE0BE',
+                        textHeading: '#3A2A18',
+                        textBody: '#7A6A54',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(58, 42, 24, 0.05)',
+                        'soft-lg': '0 10px 30px -5px rgba(58, 42, 24, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-warmBase text-textBody font-sans antialiased overflow-x-hidden selection:bg-accent selection:text-white">
+    
+    <!-- Navbar -->
+    <nav class="w-full py-6 px-6 max-w-6xl mx-auto flex justify-between items-center" data-aos="fade-down" data-aos-duration="800">
+        <a href="#" class="text-2xl font-display font-bold text-textHeading tracking-tight">
+            Subiksha<span class="text-accent">.</span>
+        </a>
+        <a href="assets/resume.pdf" target="_blank" class="px-6 py-2.5 rounded-full bg-accent text-white font-medium text-sm hover:bg-[#7a3227] transition-all shadow-soft flex items-center gap-2">
+            Download Resume <i data-lucide="download" class="w-4 h-4"></i>
+        </a>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-6">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="pt-16 pb-20 md:pt-24 md:pb-32 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 order-2 md:order-1">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-textHeading leading-[1.1] mb-6" data-aos="fade-up" data-aos-duration="1000">
+                    Turning ideas into <span class="text-accent">intelligent systems.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-textBody mb-10 max-w-xl leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    3rd-year AI & Data Science student, CGPA 8.7, building ML and full-stack projects end to end.
+                </p>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <a href="#about" class="px-8 py-3.5 rounded-full border-2 border-textHeading text-textHeading font-medium inline-flex items-center gap-2 hover:bg-textHeading hover:text-warmBase transition-colors">
+                        More about me <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex-1 order-1 md:order-2 flex justify-center md:justify-end w-full" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <!-- Accent Ring -->
+                    <div class="absolute inset-0 rounded-full border-2 border-accent transform translate-x-4 translate-y-4"></div>
+                    <!-- Profile Image. Bound to /assets/profile.jpg -->
+                    <img src="assets/profile.png" alt="Subiksha U" class="relative z-10 w-full h-full object-cover rounded-full border-4 border-warmBase shadow-soft-lg bg-tan1" onerror="this.src='https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&q=80'">
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Education Strip -->
+        <section id="about" class="py-16 border-t border-tan2 border-dashed">
+            <div class="flex flex-wrap items-center gap-6 md:gap-12 mb-10" data-aos="fade-up">
+                <div class="flex items-center gap-3 text-textHeading font-medium bg-tan1 px-4 py-2 rounded-full">
+                    <i data-lucide="graduation-cap" class="w-5 h-5 text-accent"></i>
+                    B.Tech AI & Data Science, 2024–2028
+                </div>
+                <div class="flex items-center gap-3 text-textHeading font-medium bg-tan3 px-4 py-2 rounded-full">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-accent"></i>
+                    Chennai, India
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-8 lg:col-span-9 max-w-4xl text-lg md:text-[22px] leading-relaxed text-textHeading font-medium space-y-8">
+                    <p data-aos="fade-up" data-aos-delay="0">
+                        I'm <span class="text-accent font-display font-bold">Subiksha</span>, a third-year AI & Data Science student who loves exploring how machines learn and how data can be shaped into something useful. I enjoy the mix of logic and creativity this field demands — one moment thinking through an algorithm, the next designing something people can actually use.
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="50" class="pl-6 border-l-4 border-accent text-textBody italic font-serif text-[1.1em]">
+                        "I care about understanding concepts deeply rather than just applying them, and I like picking up new tools and ideas quickly."
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="100">
+                        Outside of academics, I've taken on leadership roles like organizing college events and representing brands as a student ambassador, so I'm just as comfortable working with people as I am with data.
+                        <span class="block mt-4 font-bold text-accent">Always open to opportunities where I can contribute, learn, and grow further.</span>
+                    </p>
+                </div>
+                
+                <!-- Large Sticky Note for CGPA -->
+                <div class="md:col-span-4 lg:col-span-3 flex justify-center md:justify-end w-full">
+                    <div class="sticky-note bg-tan2 p-8 rounded-xl shadow-soft text-center border border-tan3 w-full max-w-[200px]" style="transform: rotate(3deg);" data-aos="fade-left" data-aos-delay="200">
+                        <i data-lucide="award" class="w-8 h-8 text-accent mx-auto mb-3"></i>
+                        <div class="text-sm uppercase tracking-wider font-bold text-textHeading mb-1 opacity-70">CGPA</div>
+                        <div class="text-5xl font-display font-bold text-textHeading">8.7</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="flex justify-between items-end mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-display font-bold text-textHeading">Selected Projects</h2>
+                
+                <!-- Carousel Controls -->
+                <div class="hidden md:flex gap-3">
+                    <button id="scroll-left" class="p-3 rounded-full bg-tan2 hover:bg-tan1 text-textHeading transition-colors shadow-sm" aria-label="Scroll left">
+                        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                    </button>
+                    <button id="scroll-right" class="p-3 rounded-full bg-tan2 hover:bg-tan1 text-textHeading transition-colors shadow-sm" aria-label="Scroll right">
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Carousel Track -->
+            <div id="project-track" class="flex gap-6 overflow-x-auto pb-10 hide-scrollbar snap-x snap-mandatory w-full scroll-smooth cursor-grab active:cursor-grabbing" data-aos="fade-up" data-aos-delay="100">
+                
+                <!-- Project 1 -->
+                <div class="min-w-[85vw] md:min-w-[450px] lg:min-w-[500px] snap-start bg-white rounded-3xl p-8 shadow-soft border border-tan2 flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-full bg-tan1 flex items-center justify-center text-accent">
+                                <i data-lucide="file-text"></i>
+                            </div>
+                            <span class="text-5xl font-display font-bold text-tan2 select-none">01</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-textHeading mb-3">Historical Document Digitization System</h3>
+                        <p class="text-textBody mb-6">Automated pipeline combining CV preprocessing (denoising, deskewing) with OCR and NLP classification to digitize scanned historical documents into searchable text.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">Python</span>
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">OpenCV</span>
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">OCR</span>
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="min-w-[85vw] md:min-w-[450px] lg:min-w-[500px] snap-start bg-white rounded-3xl p-8 shadow-soft border border-tan2 flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-full bg-tan2 flex items-center justify-center text-accent">
+                                <i data-lucide="message-square"></i>
+                            </div>
+                            <span class="text-5xl font-display font-bold text-tan2 select-none">02</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-textHeading mb-3">Intelligent Banking Chatbot</h3>
+                        <p class="text-textBody mb-6">NLP-driven conversational agent with intent recognition automating common banking queries and basic financial guidance.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">Python</span>
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="min-w-[85vw] md:min-w-[450px] lg:min-w-[500px] snap-start bg-white rounded-3xl p-8 shadow-soft border border-tan2 flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-full bg-tan3 flex items-center justify-center text-accent">
+                                <i data-lucide="activity"></i>
+                            </div>
+                            <span class="text-5xl font-display font-bold text-tan2 select-none">03</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-textHeading mb-3">Disease Outbreak Prediction Model</h3>
+                        <p class="text-textBody mb-6">Trained and tuned a Decision Tree classifier on healthcare data to predict outbreak likelihood for early detection.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">Python</span>
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">Scikit-learn</span>
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">Decision Trees</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="min-w-[85vw] md:min-w-[450px] lg:min-w-[500px] snap-start bg-white rounded-3xl p-8 shadow-soft border border-tan2 flex flex-col justify-between h-full">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div class="w-12 h-12 rounded-full bg-tan1 flex items-center justify-center text-accent">
+                                <i data-lucide="layout"></i>
+                            </div>
+                            <span class="text-5xl font-display font-bold text-tan2 select-none">04</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-textHeading mb-3">Construction Company Website</h3>
+                        <p class="text-textBody mb-6">Fully responsive multi-page business website (Home, Services, Portfolio, Contact) built from scratch.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">HTML</span>
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">CSS</span>
+                            <span class="px-3 py-1 bg-warmBase text-textBody text-sm rounded-full border border-tan2">JavaScript</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/subixu" target="_blank" class="text-accent font-medium inline-flex items-center gap-1 hover:gap-2 transition-all">
+                        View project <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <h2 class="text-4xl font-display font-bold text-textHeading mb-12" data-aos="fade-up">My Toolbox</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="skills-grid">
+                
+                <!-- Skill Card 1: Languages -->
+                <div class="sticky-note bg-tan1 p-8 rounded-xl shadow-soft" style="transform: rotate(-2deg);" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="code" class="text-textHeading w-6 h-6"></i>
+                        <h3 class="text-xl font-bold text-textHeading">Languages</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">Python</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">C</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">C++</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2: Core CS -->
+                <div class="sticky-note bg-tan2 p-8 rounded-xl shadow-soft" style="transform: rotate(1deg);" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="git-merge" class="text-textHeading w-6 h-6"></i>
+                        <h3 class="text-xl font-bold text-textHeading">Core CS</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">Data Structures</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">DBMS</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">OOP</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3: DS & ML -->
+                <div class="sticky-note bg-tan3 p-8 rounded-xl shadow-soft" style="transform: rotate(-1.5deg);" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="cpu" class="text-textHeading w-6 h-6"></i>
+                        <h3 class="text-xl font-bold text-textHeading">Data Science & ML</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">Data Analysis</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">ML Fundamentals</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">NumPy</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">Pandas</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">Matplotlib</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4: Web -->
+                <div class="sticky-note bg-tan2 p-8 rounded-xl shadow-soft" style="transform: rotate(2deg);" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="layout-template" class="text-textHeading w-6 h-6"></i>
+                        <h3 class="text-xl font-bold text-textHeading">Web</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">HTML</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">CSS</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 5: Tools & Platforms -->
+                <div class="sticky-note bg-tan1 p-8 rounded-xl shadow-soft lg:col-span-2" style="transform: rotate(-1deg);" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i data-lucide="git-branch" class="text-textHeading w-6 h-6"></i>
+                        <h3 class="text-xl font-bold text-textHeading">Tools & Platforms</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">Jupyter Notebook</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">Google Colab</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">Git</span>
+                        <span class="px-4 py-1.5 bg-white/60 text-textHeading rounded-full font-medium text-sm">GitHub</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Certifications Marquee -->
+        <section id="certifications" class="py-20 overflow-hidden relative">
+            <h2 class="text-4xl font-display font-bold text-textHeading mb-12" data-aos="fade-up">Certifications</h2>
+            
+            <!-- Marquee Container -->
+            <div class="marquee-wrapper relative flex overflow-hidden group">
+                <!-- Overlay Gradients for smooth fade out at edges -->
+                <div class="absolute left-0 top-0 w-16 md:w-32 h-full bg-gradient-to-r from-warmBase to-transparent z-10 pointer-events-none"></div>
+                <div class="absolute right-0 top-0 w-16 md:w-32 h-full bg-gradient-to-l from-warmBase to-transparent z-10 pointer-events-none"></div>
+                
+                <div class="marquee flex gap-6 shrink-0 group-hover:[animation-play-state:paused]">
+                    <!-- Item Set 1 -->
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Generative AI Studio <span class="text-textBody font-normal ml-1">— Google Cloud</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Generative AI <span class="text-textBody font-normal ml-1">— Microsoft</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Introduction to IoT <span class="text-textBody font-normal ml-1">— NPTEL</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">ChatGPT for Everyone <span class="text-textBody font-normal ml-1">— GUVI HCL</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Intro to Soft Skills <span class="text-textBody font-normal ml-1">— TCS iON</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Intro to Cybersecurity <span class="text-textBody font-normal ml-1">— Simplilearn</span></span>
+                    </div>
+                </div>
+                <!-- Duplicate Marquee for seamless loop -->
+                <div class="marquee flex gap-6 shrink-0 group-hover:[animation-play-state:paused] ml-6">
+                    <!-- Item Set 2 (Exact Clone) -->
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Generative AI Studio <span class="text-textBody font-normal ml-1">— Google Cloud</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Generative AI <span class="text-textBody font-normal ml-1">— Microsoft</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Introduction to IoT <span class="text-textBody font-normal ml-1">— NPTEL</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">ChatGPT for Everyone <span class="text-textBody font-normal ml-1">— GUVI HCL</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Intro to Soft Skills <span class="text-textBody font-normal ml-1">— TCS iON</span></span>
+                    </div>
+                    <div class="flex items-center gap-2 px-6 py-4 bg-white border border-tan2 rounded-full shadow-sm">
+                        <i data-lucide="award" class="text-accent w-5 h-5"></i>
+                        <span class="font-medium text-textHeading">Intro to Cybersecurity <span class="text-textBody font-normal ml-1">— Simplilearn</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Timeline -->
+        <section id="achievements" class="py-20">
+            <h2 class="text-4xl font-display font-bold text-textHeading mb-12" data-aos="fade-up">Achievements & Leadership</h2>
+            
+            <div class="ml-4 md:ml-6 border-l-2 border-tan2 relative space-y-12 pb-8">
+                
+                <div class="relative pl-8 md:pl-10" data-aos="fade-up" data-aos-delay="0">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-4 border-warmBase bg-accent"></div>
+                    <h3 class="text-xl font-bold text-textHeading mb-2">Event Management</h3>
+                    <p class="text-textBody max-w-2xl">Organized and led college-level technical and non-technical events. Coordinated logistics and managed volunteers to ensure successful execution.</p>
+                </div>
+
+                <div class="relative pl-8 md:pl-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-4 border-warmBase bg-accent"></div>
+                    <h3 class="text-xl font-bold text-textHeading mb-2">Student Ambassador, Dominova</h3>
+                    <p class="text-textBody max-w-2xl">Represented the company on campus, connecting students with professional opportunities and driving engagement.</p>
+                </div>
+
+                <div class="relative pl-8 md:pl-10" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-4 border-warmBase bg-accent"></div>
+                    <h3 class="text-xl font-bold text-textHeading mb-2">Poster Presentation</h3>
+                    <p class="text-textBody max-w-2xl">Presented comprehensive research on Explainable AI in Cardiac Arrest Prediction at a major academic forum.</p>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Contact Footer Card -->
+    <footer id="contact" class="px-6 pb-6">
+        <div class="max-w-6xl mx-auto bg-textHeading rounded-3xl p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 shadow-xl" data-aos="fade-up">
+            
+            <div>
+                <h2 class="text-4xl md:text-5xl font-display font-bold text-warmBase mb-4">Let's connect.</h2>
+                <p class="text-tan3 text-lg mb-8 max-w-md">Currently looking for an internship in ML, Data Science, or Software Engineering. Let's build something great.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <a href="mailto:subiksha220207@gmail.com" class="flex items-center gap-3 text-warmBase hover:text-tan2 transition-colors">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">subiksha220207@gmail.com</span>
+                    </a>
+                    <a href="tel:+919629125170" class="flex items-center gap-3 text-warmBase hover:text-tan2 transition-colors">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-medium">+91 9629125170</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <a href="https://linkedin.com/in/subiksha-umapathi" target="_blank" class="w-14 h-14 rounded-full bg-accent flex items-center justify-center text-white hover:scale-110 transition-transform shadow-lg" aria-label="LinkedIn">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+                <a href="https://github.com/subixu" target="_blank" class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center text-white hover:scale-110 transition-transform hover:bg-white/20" aria-label="GitHub">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="text-center mt-6 text-sm text-textBody/60 font-medium">
+            &copy; 2026 Subiksha U. Designed with purpose.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
